@@ -1,3 +1,4 @@
+
 import pandas as pd
 import streamlit as st
 import matplotlib.pyplot as plt
@@ -7,6 +8,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 from sklearn.preprocessing import LabelEncoder
 from sklearn.metrics import mean_squared_error
+
 
 # Cache the model and tokenizer to avoid reloading
 @st.cache_resource
@@ -132,7 +134,6 @@ if st.button("Run Task"):
                 
     else:
         st.warning("Please upload a file first.")
-
 
 
 
